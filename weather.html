@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherio</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="weather_icons/logo.png" alt="" class="weatherio">
+        <input placeholder="Search" class="location-search" id="Search">
+        <button class="current-location">
+            <img src="weather_icons/gps_4229876.png" alt="" class="current-img">
+            Current Location</button>
+    </div>
+<div class="weather">
+    <div class="weather-left">
+        <div class="weather-left-1">
+            <p class="weather-now">Now</p>
+            <div class="weather-temp">
+                <div class="temp-degree">
+                    <p class="temperature"></p>
+                    <p class="degree">&deg;</p>
+                    <p class="degree2">C</p>
+                </div>
+                <img src="weather_icons/01d.png" alt="" class="temp-img">
+            </div>
+            <p class="weather-type"></p>
+            <div class="weather-date">
+                <img src="weather_icons/calendar-icon-white-592896 (1).png" alt="" class="img-date">
+                <p class="day"></p>
+            </div>
+            <div class="weather-loc">
+                <img src="weather_icons/pngkey.com-white-icon-png-2350342.png" alt="" class="img-date-loc">
+                <p class="place"></p>
+            </div>
+        </div>
+        <h3 class="weather-left-2">4 Days forecast</h3>
+        <div class="weather-left-3">
+            <div class="forecast-info" id="forecast-1">
+                <img src="weather_icons/01d.png" alt="" class="forecast-img" id="fore-img-1">
+                <p class="main-p" id="main-p-1">Clear</p>
+                <div class="forecast-temp">
+                    <p class="forecast-temperature" id="fore-temp-1">7</p>
+                    <p class="forecast-degree">&deg;</p>
+                    <p class="forecast-degree2">C</p>
+                </div>
+                <p class="date-mon" id="date-1">2 Mar</p>
+                <p class="dayy" id="dayy-1">Thursday</p>
+            </div>
+            <div class="forecast-info" id="forecast-2">
+                <img src="weather_icons/01d.png" alt="" class="forecast-img" id="fore-img-2">
+                <p class="main-p" id="main-p-2">Clear</p>
+                <div class="forecast-temp">
+                    <p class="forecast-temperature" id="fore-temp-2">7</p>
+                    <p class="forecast-degree">&deg;</p>
+                    <p class="forecast-degree2">C</p>
+                </div>
+                <p class="date-mon" id="date-2">2 Mar</p>
+                <p class="dayy">Thursday</p>
+            </div>
+            <div class="forecast-info" id="forecast-3">
+                <img src="weather_icons/01d.png" alt="" class="forecast-img" id="fore-img-3">
+                <p class="main-p" id="main-p-3">Clear</p>
+                <div class="forecast-temp">
+                    <p class="forecast-temperature" id="fore-temp-3"></p>
+                    <p class="forecast-degree">&deg;</p>
+                    <p class="forecast-degree2">C</p>
+                </div>
+                <p class="date-mon" id="date-3">2 Mar</p>
+                <p class="dayy">Thursday</p>
+            </div>
+            <div class="forecast-info" id="forecast-4">
+                <img src="weather_icons/01d.png" alt="" class="forecast-img" id="fore-img-4">
+                <p class="main-p" id="main-p-4">Clear</p>
+                <div class="forecast-temp">
+                    <p class="forecast-temperature" id="fore-temp-4">7</p>
+                    <p class="forecast-degree">&deg;</p>
+                    <p class="forecast-degree2">C</p>
+                </div>
+                <p class="date-mon" id="date-4">2 Mar</p>
+                <p class="dayy">Thursday</p>
+            </div>
+            <div class="forecast-info" id="forecast-5">
+                <img src="weather_icons/01d.png" alt="" class="forecast-img" id="fore-img-5">
+                <p class="main-p" id="main-p-5">Clear</p>
+                <div class="forecast-temp">
+                    <p class="forecast-temperature" id="fore-temp-5">7</p>
+                    <p class="forecast-degree">&deg;</p>
+                    <p class="forecast-degree2">C</p>
+                </div>
+                <p class="date-mon" id="date-5">2 Mar</p>
+                <p class="dayy">Thursday</p>
+            </div>
+        </div>
+        <div class="weather-left-4">
+            <div class="type">
+                <h2 class="head-type"></h2>
+                <p class="para-type"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-right">
+        <div class="weather-right-1">
+            <p class="weather-right-high">Todays Highlights</p>
+            <div class="weather-right-left-big">
+                <div class="weather-right-left">
+                    <div class="air">
+                        <p class="air-quality">Air Quality index</p>
+                        <p class="rate"></p>
+                    </div>
+                    <div class="air-values">
+                        <!-- <img src="weather_icons/01n.png" alt="" class="air-img"> -->
+                        <span class="fontawesome">
+                            <i class="fa-solid fa-wind fa-4x" style="color: #ffffff;"></i>
+                        </span>
+                        <div class="values">
+                            <p class="item">PM2.5</p>
+                            <p class="item-value" id="pm">3.90</p>
+                        </div>
+                        <div class="values">
+                            <p class="item">SO2</p>
+                            <p class="item-value" id="so">3.90</p>
+                        </div>
+                        <div class="values">
+                            <p class="item">NO2</p>
+                            <p class="item-value" id="no">3.90</p>
+                        </div>
+                        <div class="values">
+                            <p class="item">O3</p>
+                            <p class="item-value" id="o">3.90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-right-right">
+                    <p class="sunrise">Sunrise & Sunset</p>
+                    <div class="sunrise-sunset-info">
+                        <div class="sunrise-info">
+                            <!-- <img src="weather_icons/01d.png" alt="" class="sunrise-img" > -->
+                            <i class="fa-regular fa-sun fa-4x" style="color: #ffffff;" ></i>
+                            <div class="sunrise-time">
+                                <p class="sun-time">Sunrise</p>
+                                <p class="time" id="rise-time">6:46 AM</p>
+                            </div>
+                        </div>
+                        <div class="sunrise-info">
+                            <!-- <img src="weather_icons/01n.png" alt="" class="sunrise-img"> -->
+                            <i class="fa-regular fa-moon fa-4x" style="color: #ffffff;"></i>
+                            <div class="sunrise-time">
+                                <p class="sun-time">Sunset</p>
+                                <p class="time" id="set-time">5:39 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-hum-2">
+                    <div class="weather-hum">
+                        <p class="humid">Humidity</p>
+                        <div class="humid-per">
+                            <!-- <img src="weather_icons/03d.png" alt="" class="per-img"> -->
+                            <i class="fa-solid fa-droplet fa-4x" style="color: #ffffff;"></i>
+                            <p class="per" id="hum-per">82%</p>
+                        </div>
+                    </div>
+                    <div class="weather-hum">
+                        <p class="humid">Pressure</p>
+                        <div class="humid-per">
+                            <img src="weather_icons/50n.png" alt="" class="per-img">
+                            <p class="per" id="pre">1025hPa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-hum-2">
+                    <div class="weather-hum">
+                        <p class="humid">Visibility</p>
+                        <div class="humid-per">
+                            <!-- <img src="weather_icons/03n.png" alt="" class="per-img"> -->
+                            <i class="fa-solid fa-eye fa-4x" style="color: #ffffff;"></i>
+                            <p class="per" id="dist">10km</p>
+                        </div>
+                    </div>
+                    <div class="weather-hum">
+                        <p class="humid">Feels Like</p>
+                        <div class="humid-per">
+                            <!-- <img src="weather_icons/03d.png" alt="" class="per-img"> -->
+                            <i class="fa-solid fa-temperature-three-quarters fa-4x" style="color: #ffffff;"></i>
+                            <p class="per" id="temp">2 &deg;c</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-right-2">
+            <p class="today">Today at</p>
+            <div class="weather-right-2-1">
+                <div class="today-temp">
+                    <p class="today-time">12 AM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+                <div class="today-temp">
+                    <p class="today-time">3 AM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+                <div class="today-temp">
+                    <p class="today-time">6 AM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+                <div class="today-temp">
+                    <p class="today-time">9 AM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+                <div class="today-temp">
+                    <p class="today-time">12 PM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+                <div class="today-temp">
+                    <p class="today-time">3 PM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+                <div class="today-temp">
+                    <p class="today-time">6 PM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+                <div class="today-temp">
+                    <p class="today-time">9 PM</p>
+                    <img src="weather_icons/04d.png" alt="" class="today-img">
+                    <p class="today-degree">5 &deg;c</p>
+                </div>
+            </div>
+            <div class="weather-right-2-2">
+                <div class="today-wind">
+                    <p class="today-time">12 AM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+                <div class="today-wind">
+                    <p class="today-time">3 AM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+                <div class="today-wind">
+                    <p class="today-time">6 AM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+                <div class="today-wind">
+                    <p class="today-time">9 AM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+                <div class="today-wind">
+                    <p class="today-time">12 PM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+                <div class="today-wind">
+                    <p class="today-time">3 PM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+                <div class="today-wind">
+                    <p class="today-time">6 PM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+                <div class="today-wind">
+                    <p class="today-time">9 PM</p>
+                    <img src="weather_icons/direction.png" alt="" class="today-icon">
+                    <div class="today-speed">8km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p class="right2024">
+        &copy; Copyright 2024 Yashpreet Singh. All Rights Reserved 
+    </p>
+</div>
+    <script src="https://kit.fontawesome.com/61d7b930b1.js" crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
